@@ -72,6 +72,8 @@ INSTALLED_APPS = [
     "drf_spectacular",
     # local
     "accounts.apps.AccountsConfig",
+    "posts.apps.PostsConfig",
+    "chat.apps.ChatConfig",
 ]
 
 MIDDLEWARE = [
