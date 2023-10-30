@@ -10,11 +10,7 @@ class ConversationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Conversation
-        fields = (
-            "id",
-            "users",
-            "modified_at_formatted",
-        )
+        fields = ('id', 'users', 'modified_at_formatted',)
 
 
 class ConversationMessageSerializer(serializers.ModelSerializer):
@@ -23,13 +19,7 @@ class ConversationMessageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ConversationMessage
-        fields = (
-            "id",
-            "sent_to",
-            "created_by",
-            "created_at_formatted",
-            "body",
-        )
+        fields = ('id', 'sent_to', 'created_by', 'created_at_formatted', 'body',)
 
 
 class ConversationDetailSerializer(serializers.ModelSerializer):
@@ -37,9 +27,4 @@ class ConversationDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Conversation
-        fields = (
-            "id",
-            "users",
-            "modified_at_formatted",
-            "messages",
-        )
+        fields = ('id', 'users', 'modified_at_formatted', 'messages',)
